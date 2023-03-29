@@ -7,11 +7,9 @@
     box-sizing: border-box;
 }
 
-
 div.cabeça{
     margin-left: 50rem;
 }
-
 
 body{
     background-image: url(./assets/images/fundo2.jpg);
@@ -24,7 +22,6 @@ div.lado{
     padding: 0;
 }
 
-
 a {
     position: relative;
     color: #fff;
@@ -33,7 +30,6 @@ a {
     margin-left: 5rem;
     margin-right: 0;
   }
-
 
   a:before {
     content: "";
@@ -50,7 +46,6 @@ a {
     transition: all 0.3s ease-in-out 0s;
   }
 
-
   a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
@@ -58,19 +53,19 @@ a {
   }
 
   #divBusca{
-    background-color:#FFF;
+    background-color:#2F4F4F;
     border:solid 1px;
     border-radius:15px;
-    width:14rem;
+    width:300px;
   }
   
   #txtBusca{
     float:left;
     background-color:transparent;
-    top: 5rem;  
+    padding-left:5px;
     font-style:italic;
     font-size:18px;
     border:none;
-    height:2rem;
-    width:14rem;
+    height:32px;
+    width:260px;
   }

@@ -8,17 +8,47 @@
 }
 
 div.cabeça{
-    margin-left: 50rem;
+    margin-left: 40rem;
 }
 
-body{
-    background-image: url(./assets/images/fundo2.jpg);
+header {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100vh;
+  color: var(--text-primary);
+  position: relative;
+  overflow:hidden;
+}
+
+header::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(./assets/images/fundo2.jpg);
+  background-size: cover;
+  animation: zoom 5s;
+}
+
+@keyframes zoom {
+  0% {
+      transform: scale(1.5);
+  }
+  100%{
+      transform: scale(1);
+  }
 }
 
 div.lado{
     background-color: #000;
     width: 100rem;
-    height: 2rem;
+    height: 3rem;
     padding: 0;
 }
 
@@ -27,8 +57,9 @@ a {
     color: #fff;
     text-decoration: none;  
     font-style: 'Days One';
-    margin-left: 5rem;
-    margin-right: 0;
+    margin-left: 10rem;
+    bottom: 2.3rem;
+    left: 11rem;
   }
 
   a:before {
@@ -53,19 +84,82 @@ a {
   }
 
   #divBusca{
-    background-color:#2F4F4F;
+    background-color:transparent;
     border:solid 1px;
     border-radius:15px;
-    width:300px;
+    width:14rem;
+    margin-left: 0;
+    position: relative;
   }
-  
+ 
   #txtBusca{
     float:left;
     background-color:transparent;
-    padding-left:5px;
+    top: 5rem;  
     font-style:italic;
     font-size:18px;
+    color: #fff;
     border:none;
-    height:32px;
-    width:260px;
+    height:2rem;
+    width:14rem;
   }
+
+  /*comunidade*/
+
+  
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+  }
+  
+  input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 3rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: aqua;
+  }
+  
+  .post h2 {
+    margin-top: 0;
+  }
+
+#posts{
+  padding: 0;
+  margin-top: 1rem;
+
+}

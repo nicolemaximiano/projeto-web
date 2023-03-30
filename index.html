@@ -13,13 +13,27 @@
         <div class="cabeça">
             <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..."/>
-                <img src="search3.png" id="btnBusca" alt="Buscar"/>
+                <img src="./" id="btnBusca" alt="Buscar"/>
               </div>
         <a href="">INICIO </a>
         <a href=""> UNIVERSO</a>
         <a href=""> QUADRINHO</a>
         </div>
         </div>
+        <main>
+            <form id="form">
+              <label for="title">Título:</label>
+              <input type="text" id="title" name="title">
+              
+              <label for="content">Conteúdo:</label>
+              <textarea id="content" name="content"></textarea>
+              
+              <button type="submit">Publicar</button>
+            </form>
+            
+            <section id="posts"></section>
+          </main>
     </header>
+    <script src="funcition.js"></script>
 </body>
 </html>

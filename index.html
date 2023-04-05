@@ -8,32 +8,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="lado">
-        <div class="cabeça">
-            <div id="divBusca">
-                <input type="text" id="txtBusca" placeholder="Buscar..."/>
-                <img src="./" id="btnBusca" alt="Buscar"/>
-              </div>
-        <a href="">INICIO </a>
-        <a href=""> UNIVERSO</a>
-        <a href=""> QUADRINHO</a>
+  <header id="inicio">
+    <div class="lado">
+      <div class="cabeça"> 
+        <div id="divBusca">
+          <input type="text" id="txtBusca" placeholder="Buscar..."/>
+          <img src="./" id="btnBusca" alt="Buscar"/>
         </div>
-        </div>
-        <main>
-            <form id="form">
-              <label for="title">Título:</label>
-              <input type="text" id="title" name="title">
-              
-              <label for="content">Conteúdo:</label>
-              <textarea id="content" name="content"></textarea>
-              
-              <button type="submit">Publicar</button>
-            </form>
-            
-            <section id="posts"></section>
-          </main>
-    </header>
-    <script src="funcition.js"></script>
+        <a href="#inicio">INICIO</a>
+        <a href="">UNIVERSO</a>
+        <a href="">QUADRINHO</a>
+      </div>
+    </div>
+  </header>
+
+  <header>
+    <section id="comu">
+
+      <form id="form">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title">
+        
+        <label for="content">Conteúdo:</label>
+        <textarea id="content" name="content"></textarea>
+        
+        <button type="submit">Publicar</button>
+      </form>
+
+      <section id="posts"></section>
+    </main>
+
+    </section>
+
+  </header>
 </body>
+<script src="funcition.js"></script>
 </html>
